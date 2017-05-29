@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+        </style>
+    </head>
+    <body>
+        <ul class="nav nav-pills" style="z-index:1; position:fixed; display:inline-block">
+          <li role="presentation" class="active"><a href="#pageone">프로듀스101 1~30위까지 랜덤으로 3명 출력하기</a></li>
+          <li role="presentation" class="active"><a href="#pagetwo">랜덤으로 숫자 두개 띄우기~</a></li>
+        </ul>
+        <div style="height:38px;"></div>
+  <h1 style="text-align :center;">추가과제</h1>
+       
+       
+        <div class="row " style="border:2px solid black; pading-right:50px; pading-left:50px; padding-bottom:75px;">
+            
+            <div style="font-size:3rem; font-weight:bold; text-align:center; margin-top:75px; margin-bottom:75px;">
+                <a style="text-decoration:none; color:block;" id="pageone">프로듀스101 1~30위까지 랜덤으로 3명 출력하기</a></div>
+                <div class="container">
+                  <div class="col-xs-4 col-md-3">
+                    <img style = "margin:40px 40px; height:300px; width:300px; float:left;" src="<%=@produce101[0]%>">
+                  </div>
+                     <div class="col-xs-4 col-md-3">
+                    <img style = "margin:40px 40px; height:300px; width:300px; float:left;" src="<%=@produce101[1]%>">
+                  </div>
+                     <div class="col-xs-4 col-md-3">
+                    <img style = "margin:40px 40px; height:300px; width:300px;" src="<%=@produce101[2]%>">
+                  </div>
+                </div>
+        </div>
+  
+      <div style="padding-top:95px; font-size:50px; text-align:center;"><a style="text-decoration:none; color:block;" id="pagetwo">랜덤으로 숫자 두개 띄우기~ </a></div></div>
+         <div class="result" style="font-size:50px; text-align:center;">
+            숫자 1번 : <%= @random_number[0] %><br>
+            숫자 2번 : <%= @random_number[1] %>
+          </div>
+      </div>
+        <div style="height:150px;"></div>
+       
+    </body>
+    
+</html>
